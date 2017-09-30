@@ -51,7 +51,7 @@
 
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
-\titleformat{\subsection}{\normalsize\scshape\raggedright}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\small\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
 \addtolength{\textheight}{1.75in} % bottom margin extension
@@ -80,10 +80,9 @@
 %	Objective
 %----------------------------------------------------------------------------------------
 \section{Objective}
-\small{
-    I currently am looking for a Software Engineering Internship or Co-Op for the Spring (and possibly Summer) of 2018.
-    While I hope to gain experience working in a Modern C++ codebase, I already have an adequate amount of experience in frontend web development as well as Java and would be comfortable in those environments.
-}
+    I currently am looking for a Software Engineering Internship or Co-Op for the Spring and Summer of 2018.
+    I have experience in frontend and backend web development as well as some Java experience and I would be comfortable in those environments.
+    That said, I am interested in becoming proficient in developing performance-critical applications, and would be enthused to work in a modern C++ codebase.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -115,25 +114,35 @@
 % \end{multicols}
 % \normalsize
 
-
 %----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS 
+%	WORK EXPERIENCE 
 %----------------------------------------------------------------------------------------
 
-\section{Programming Skills}
+%\section{Work Experience}
 
-\begin{tabular}{r|p {11cm}}
-    Basic Knowledge: & \textsc{C}, \textsc{C++11}, \textsc{Python, Django Framework}, \textsc{Protobuf}, \textsc{Bash}, UML  \\
+%\begin{tabular}{r|p{11cm}}
 
-    Intermediate Knowledge: & \textsc{Rust}, \textsc{Java},  \textsc{Android framework}, \textsc{Html/Css}, \textsc{Node.js}, \href{https://github.com/hgzimmerman/Resume}{\LaTeX}, \textsc{Git}, \textsc{\href{https://github.com/hgzimmerman}{Github}}, \textsc{Docker}, \textsc{Linux and Unix-like systems} \\
+%\textsc{Mar 2013-Aug 2017} & Rowing Instructor at \textsc{Alliance Rowing Club}, Wilmette, IL \emph{}\\
+%& \footnotesize{Taught the basics of rowing to people new to the sport.} \\
 
-    Experienced: &  \textsc{Typescript, Angular Framework}\\
+%    \textsc{Aug 2016-Jan 2017,}\\ \textsc{May 2017-Aug 2017} & Software Engineer at \textsc{Ocient}, Chicago, IL \emph{} \\
+%& \footnotesize{Worked on a webapp for interfacing with a distributed database using Angular 2. Implemented a system health diagnostic tool in C++. }
+%\end{tabular}
 
+
+
+
+
+
+
+\section{Software Projects}
+
+\subsection{\href{http://www.ocient.com/}{Ocient}: August 2016-Jan 2017, May 2017-Aug 2017}
+\begin{tabular}{r|p {13.1cm}}
+    xgHealth: & Implemented a tool in C++ 11 that would read the current state of a distributed database via Protobuf and either output CSV or display the system health in a TUI.\\ \cline{2-2}
+    xgWebui: & Assisted development of a webapp written using Angular 2, Typescript, and Node.js that facilitated configuration and management of a custom distributed database system. I worked on all aspects of the application, implementing numerous components, serializing to and from Protobuf and JSON, writing tests, and fixing bugs.
 \end{tabular}
 
-
-
-\section{Projects}
 \subsection{Personal and Academic}
 \begin{tabular}{r|p {11cm}}
 %    Coherence: & Collaborated on a cross-platform API for streaming sensor data from Android and iOS devices to a JVM compatible computer.\\ \cline{2-2}
@@ -151,27 +160,22 @@
 
 
 \end{tabular}
-\subsection{Professional}
-\begin{tabular}{r|p {12.1cm}}
-    xgHealth @ Ocient: & Implemented a tool in C++ 11 that would read the current state of a distributed database via Protobuf and either output CSV or display the system health in a TUI.\\ \cline{2-2}
-    xgWebui @ Ocient: & Assisted development of a webapp written using Angular 2, Typescript, and Node.js that facilitated configuration and management of a custom distributed database system. I worked on all aspects of the application, implementing numerous components, serializing to and from Protobuf and JSON, writing tests, simplifying code, and fixing bugs.
 
-
-\end{tabular}
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE 
+%	COMPUTER SKILLS 
 %----------------------------------------------------------------------------------------
 
-\section{Work Experience}
+\section{Programming Skills}
 
-\begin{tabular}{r|p{11cm}}
+\begin{tabular}{r|p {11cm}}
+    Basic Knowledge: & \textsc{C}, \textsc{C++11}, \textsc{Python, Django Framework}, \textsc{Protobuf}, \textsc{Bash}, \textsc{React.js}  \\
 
-\textsc{Mar 2013-Aug 2017} & Rowing Instructor at \textsc{Alliance Rowing Club}, Wilmette, IL \emph{}\\
-& \footnotesize{Taught the basics of rowing to people new to the sport.} \\
+    Intermediate Knowledge: & \textsc{Java},  \textsc{Android framework}, \textsc{Html/Css}, \textsc{Node.js}, \href{https://github.com/hgzimmerman/Resume}{\LaTeX}, \textsc{Git}, \textsc{\href{https://github.com/hgzimmerman}{Github}}, \textsc{Docker}, \textsc{Linux and Unix-like systems} \\
 
-    \textsc{Aug 2016-Jan 2017,}\\ \textsc{May 2017-Aug 2017} & Software Engineer at \textsc{Ocient}, Chicago, IL \emph{} \\
-& \footnotesize{Worked on a webapp for interfacing with a distributed database using Angular 2. Implemented a system health diagnostic tool in C++. }
+    Experienced: &  \textsc{Typescript, Angular Framework}, \textsc{Rust} \\
+
 \end{tabular}
+
 
 
 %----------------------------------------------------------------------------------------
