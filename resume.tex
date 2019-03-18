@@ -1,0 +1,135 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage{enumitem}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[margin=1in]{geometry}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Henry Zimmerman}}\\
+	Rochester, NY $\cdot$ hgz1374@gmail.com $\cdot$ 847-287-1920 $\cdot$ https://github.com/hgzimmerman\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Rochester Institute of Technology}\hfill Rochester, NY\\
+BS Software Engineering \hfill Aug 2014 - May 2019\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Ocient} \hfill Chicago, IL\\
+\textit{Software Engineer (Co-Op)} \hfill Aug 2016 - Jan 2017 \textbar{} May 2017 - Aug 2017\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Worked on Angular 2+ web configuration interface for custom distributed database product.
+	\item Wrote internal tool for performance monitoring.
+\end{itemize}
+\textbf{MedPoint Digital} \hfill Evanston, IL\\
+\textit{Software Engineer (Co-Op)} \hfill Jan 2018 - May 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Built internal tool for service uptime monitoring.
+	\item Migrated document storage from self-hosted solution to Azure.
+	\item Audited and provided guidance for existing and emergent security vulnerabilities in core product.
+\end{itemize}
+
+\header{Programing Experience}
+\begin{itemize}[leftmargin=*]\itemsep 1pt 
+    \item[]{\makebox[3.2cm][l]{Proficient:} Rust, TypeScript}
+    \item[]{\makebox[3.2cm][l]{Familiar With:} C\#, Java,  Docker, PostgreSQL, React, Angular 2+, WASM, Shell}
+    \item[]{\makebox[3.2cm][l]{Working Knowledge:} JavaScript, Python, MS SQL, C, C++, Android}
+\end{itemize}
+\vspace{2mm}
+
+\header{Projects}
+{\textbf{Ocient DB Configuration Client}} {\sl NodeJS, Angular 2+, TypeScript, Protobuf} \\
+Worked on a small team to develop the backend and frontend of a webapp that facilitated the configuration of a massive distributed database and analytics engine. Learned and became proficient in Angular 2 and web development best practices. Created pages for adding nodes to the system and configuring machine learning algorithms to run on clusters of those nodes.\\
+\vspace*{2mm}
+{\textbf{Ocient Performance Monitoring Tool}} {\sl C++, Protobuf, NCurses} \\
+Implemented the frontend terminal user interface for a distributed database performance measurement tool. I learned C++ and used it to create a realtime display of performance counters embedded in the database engine. The tool is used by the backend database team to assess the effects of their changes on the performance of the system.\\
+\vspace*{2mm}
+{\textbf{MedPoint JWT Security and Performance Audit}} {\sl C\#, .NET, JWT, Javascript} \\
+Independently discovered, extensively documented, wrote proof of concept attack, and provided solution specification for an inneffective Json Web Token implementation that did not adequately provide authorization to REST API endpoints. I also provided a specification that would reduce database utilization by the authorization system by at least an order of magnitude.\\
+\vspace*{2mm}
+{\textbf{MedPoint Uptime Monitoring Tool}} {\sl C\#, .Net Core, Angular 2+, Typescript} \\
+Wrote an internal tool that would record the recent uptime for the company\textquotesingle{}s services and display them in a webapp.\\
+\vspace*{2mm}
+
+\header{Extracurricular Activities}
+\textbf{RIT Men\textquotesingle{}s Crew}\\
+Rowed and Coxed for RIT\textquotesingle{}s 2nd Varsity 8 \hfill Fall 2014 - Spring 2017\\
+\vspace*{2mm}
+
+\ 
+\end{document}
