@@ -80,56 +80,68 @@
 
 %==== Education ====%
 \header{Education}
-\textbf{Rochester Institute of Technology}\hfill Rochester, NY\\
-BS Software Engineering \hfill Aug 2014 - May 2019\\
+BS Software Engineering, Rochester Institute of Technology  \hfill  May 2019\\
 \vspace{2mm}
 
 %==== Experience ====%
-\header{Experience}
+\header{Relevant Experience}
 \vspace{1mm}
 
 \textbf{Ocient} \hfill Chicago, IL\\
 \textit{Software Engineer (Co-Op)} \hfill Aug 2016 - Jan 2017 \textbar{} May 2017 - Aug 2017\\
-\vspace{-1mm}
+\vspace*{1mm}
+{\textbf{DB Configuration Client}} {\sl NodeJS, Angular 2+, TypeScript, Protobuf} \\
+    A distributed database product being developed required a tool so that nodes could be configured and monitored.
 \begin{itemize} \itemsep 1pt
-	\item Worked on Angular 2+ web configuration interface for custom distributed database product.
-	\item Wrote internal tool for performance monitoring.
+	\item Worked on a 2 person team to develop the backend and frontend of a webapp. 
+	\item Created components for manipulating nodes, clusters, and configuring machine learning algorithms to run across the clusters.
 \end{itemize}
+\vspace*{2mm}
+
+{\textbf{Performance Monitoring Tool}} {\sl C++, Protobuf, NCurses} \\
+    The database engine development team didn't have insight into where performance bottlenecks were and had instrumented performance counters in the engine, but had no way to visualize the data.
+\begin{itemize} \itemsep 1pt
+	\item Implemented a TUI utility using C++ and NCurses to visualize performance counter data, or emit CSV for further analysis.
+	\item Backend team was able to use the utility to assess the effects of their changes on the performance of the system.
+\end{itemize}
+\vspace*{2mm}
+
+
+
 \textbf{MedPoint Digital} \hfill Evanston, IL\\
 \textit{Software Engineer (Co-Op)} \hfill Jan 2018 - May 2018\\
-\vspace{-1mm}
+{\textbf{JWT Security and Performance Audit}} {\sl C\#, .NET, JWT, Javascript} \\
+An set of APIs initially built without any security measures was being retrofitted with a JWT-based scheme to provide authorization for a distributed monolith.
 \begin{itemize} \itemsep 1pt
-	\item Built internal tool for service uptime monitoring.
-	\item Migrated document storage from self-hosted solution to Azure.
-	\item Audited and provided guidance for existing and emergent security vulnerabilities in core product.
+	\item Discovered that the proposed solution was defective and far less performant than possible.
+	\item Wrote documents detailing how to exploit the vulnerability, how to secure against the attacks, and how to remove reliance on external caches for the system.
+    \item Proposed solution would reduce database utilization by the authorization system by more than 13 times the initially suggested system.
 \end{itemize}
+\vspace*{2mm}
 
-\header{Programing Experience}
-\begin{itemize}[leftmargin=*]\itemsep 1pt 
-    \item[]{\makebox[3.2cm][l]{Proficient:} Rust, TypeScript}
-    \item[]{\makebox[3.2cm][l]{Familiar With:} C\#, Java,  Docker, PostgreSQL, React, Angular 2+, WASM, Shell}
-    \item[]{\makebox[3.2cm][l]{Working Knowledge:} JavaScript, Python, MS SQL, C, C++, Android}
+{\textbf{Uptime Monitoring Tool}} {\sl C\#, .NET Core, Angular 2+, Typescript} \\
+Various services for a product had poor reliability and poor visibility for determining when they were unavailable, or if they had been down in the recent past.
+\begin{itemize} \itemsep 1pt
+	\item Wrote an internal tool that would record the recent uptime for the company\textquotesingle{}s services and display them in a webapp.\\
+    \item Webapp would display history for three days for service availability for services running on dev, test, and production environments.
 \end{itemize}
-\vspace{2mm}
-
-\header{Projects}
-{\textbf{Ocient DB Configuration Client}} {\sl NodeJS, Angular 2+, TypeScript, Protobuf} \\
-Worked on a small team to develop the backend and frontend of a webapp that facilitated the configuration of a massive distributed database and analytics engine. Learned and became proficient in Angular 2 and web development best practices. Created pages for adding nodes to the system and configuring machine learning algorithms to run on clusters of those nodes.\\
-\vspace*{2mm}
-{\textbf{Ocient Performance Monitoring Tool}} {\sl C++, Protobuf, NCurses} \\
-Implemented the frontend terminal user interface for a distributed database performance measurement tool. I learned C++ and used it to create a realtime display of performance counters embedded in the database engine. The tool is used by the backend database team to assess the effects of their changes on the performance of the system.\\
-\vspace*{2mm}
-{\textbf{MedPoint JWT Security and Performance Audit}} {\sl C\#, .NET, JWT, Javascript} \\
-Independently discovered, extensively documented, wrote proof of concept attack, and provided solution specification for an inneffective Json Web Token implementation that did not adequately provide authorization to REST API endpoints. I also provided a specification that would reduce database utilization by the authorization system by at least an order of magnitude.\\
-\vspace*{2mm}
-{\textbf{MedPoint Uptime Monitoring Tool}} {\sl C\#, .Net Core, Angular 2+, Typescript} \\
-Wrote an internal tool that would record the recent uptime for the company\textquotesingle{}s services and display them in a webapp.\\
 \vspace*{2mm}
 
-\header{Extracurricular Activities}
+%\header{Programing Experience}
+%\begin{itemize}[leftmargin=*]\itemsep 1pt 
+%    \item[]{\makebox[3.2cm][l]{Proficient:} Rust, TypeScript}
+%    \item[]{\makebox[3.2cm][l]{Familiar With:} C\#, Java,  Docker, PostgreSQL, React, Angular 2+, WASM, Shell}
+%    \item[]{\makebox[3.2cm][l]{Working Knowledge:} JavaScript, Python, MS SQL, C, C++, Android}
+%\end{itemize}
+%\vspace{2mm}
+
+
+\header{Professional Experience}
+\textbf{Rowing Instructor}\\
+Taught sculling to rowing novices of all ages as a Summer job. \hfill 2012 - 2018\\
+\vspace*{2mm}
+
 \textbf{RIT Men\textquotesingle{}s Crew}\\
-Rowed and Coxed for RIT\textquotesingle{}s 2nd Varsity 8 \hfill Fall 2014 - Spring 2017\\
+Rowed and Coxed for RIT\textquotesingle{}s 2nd Varsity 8. \hfill  2014 - 2017\\
 \vspace*{2mm}
-
-\ 
 \end{document}
