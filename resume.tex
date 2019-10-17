@@ -89,22 +89,8 @@
 
 %==== Profile ====%
 \header{Profile}
-Dedicated Software Engineer specializing in finding and defining problems and leading the charge to solve them.
-%Interested in emerging ideas such as utilizing Rust within the web development domain.
-Interested in leveraging new programming languages to write less ambiguous and more maintainable code.
-Competencies in:
-
-\begin{multicols}{2}
-\begin{itemize} \itemsep -1mm
-    \item Full Stack Web Development
-    \item Rust
-    \item Linear and Agile Software Development
-    \item Small Team Development
-    \item Designing for Long-Term Maintenance
-    \item Security in Distributed Systems
-    %\item Open Source
-\end{itemize}
-\end{multicols}
+    Highly competent Full Stack Web Developer, with experience in languages like \textbf{Java}, \textbf{C\#}, \textbf{Rust}, and \textbf{TypeScript}.
+    I have experience working in small teams using both \textbf{Waterfall} and \textbf{Agile} (\textbf{Scrum}, \textbf{Kanban}) software development methodologies.
 
 %==== Education ====%
 \header{Education}
@@ -115,52 +101,47 @@ Competencies in:
 \header{Relevant Experience}
 \vspace{1mm}
 
- 
-\textbf{Software Engineer (Co-Op)} \textit{Ocient} \hfill Aug 2016 - Jan 2017 \textbar{} May 2017 - Aug 2017\\
+\textbf{Assistant Maintainer (Open Source)}  \hfill April 2018 - Present\\
+\textbf{YewStack} \hfill Boston, MA
 
 \begin{addmargin}[1em]{2em}% 1em left, 2em right
-{\textbf{DB Configuration Client}} {\sl NodeJS, Angular 2+, TypeScript, Protobuf, Pivotal Tracker} \\
-    A distributed database product being developed required a tool so that nodes could be configured and monitored.
-\vspace*{-2mm}
-\begin{itemize}[leftmargin=4.5mm] \itemsep -1mm
-	\item Worked on a 2 person team to develop the backend and frontend of a webapp
-	\item Created components for manipulating nodes, clusters, and configuring machine learning algorithms to run across the clusters
-\end{itemize}
+    I work directly on \textbf{Yew}, \textbf{Rust}'s largest \textbf{WASM} frontend web framework, contributing numerous bugfixes, added features, documentation and tests.
+    As part of my work within the organization, I lead development on the \textbf{Router} implementation, as well as prototyping libraries to add support for \textbf{CSS} and to improve the ergonomics of the framework. 
 \vspace*{2mm}
 
-{\textbf{Performance Monitoring Tool}} {\sl C++, Protobuf, NCurses} \\
-    The database engine development team didn't have insight into where performance bottlenecks were. 
-    They had instrumented performance counters in the engine, but had no way to visualize the data.
-\vspace*{-2mm}
-\begin{itemize}[leftmargin=4.5mm] \itemsep -1mm
-	\item Implemented a TUI utility to visualize performance counter data as benchmarks were run on the database, or emit CSV for further analysis
-	\item Backend team was able to use the utility to assess the effects of their changes on the performance of the system
-\end{itemize}
+\end{addmargin}
+
+
+
+
+\textbf{Software Engineer (Co-Op)}  \hfill Jan 2018 - May 2018\\
+\textbf{MedPoint Digital} \hfill Evanston, IL
+\begin{addmargin}[1em]{2em}% 1em left, 2em right
+    \textit{{\textbf{JWT Security Audit}}} \\
+    Detected that a security flaw in a \textbf{JWT}-based authentication scheme being put in place for a \textbf{C\#/.Net} distributed application which could allow privilege escalation attacks to occur. 
+Created documentation demonstrating how exploit and fix the vulnerability in a way that made the system use fewer resources.
+\vspace*{2mm}
+
+{\textbf{Uptime Monitoring Tool}} \\ 
+Various services for a product had poor reliability and poor visibility for determining when they were unavailable, or if they had been down in the recent past. 
+    I wrote an internal tool using \textbf{C\#/ .NET Core} that would record the last three days of uptime for the company's services and displayed those metrics in a webapp written using \textbf{TypeScript} and \textbf{Angular}.
 \vspace*{2mm}
 \end{addmargin}
 
 
 
-\textbf{Software Engineer (Co-Op)} \textit{MedPoint Digital} \hfill Jan 2018 - May 2018\\
+\textbf{Software Engineer (Co-Op)}  \hfill Aug 2016 - Jan 2017 \textbar{} May 2017 - Aug 2017\\
+\textbf{Ocient} \hfill Chicago, IL
 
 \begin{addmargin}[1em]{2em}% 1em left, 2em right
-{\textbf{JWT Security and Performance Audit}} {\sl C\#, .NET, JWT, JavaScript} \\
-A set of APIs initially built without any security measures were being retrofitted with a JWT-based scheme to provide authorization for a distributed monolith.
-\vspace*{-2mm}
-\begin{itemize}[leftmargin=4.5mm] \itemsep -1mm
-	\item Discovered that the initial solution was not secure and far less performant than possible
-	\item Wrote documents detailing how to exploit the vulnerability, and how to secure against the attack%, and how to remove reliance on external caches for the system.
-    \item Proposed authorization solution would utilize database more than 13 times less frequently
-\end{itemize}
+\textit{\textbf{DB Configuration Client}} \\
+I worked on a 2 person team on a webapp that would be used to configure, maintain, and monitor a massively distributed database that was being developed as part of the Ocient’s core product offering.
+    I wrote the backend using \textbf{TypeScript} and \textbf{NodeJS} - communicating with the database via \textbf{Protobuf}, as well as the frontend pages using \textbf{Angular} to add features for manipulating clusters and their constituent compute/storage nodes, and for configuring machine learning algorithms to run on those clusters.
 \vspace*{2mm}
 
-{\textbf{Uptime Monitoring Tool}} {\sl C\#, .NET Core, Angular 2+, TypeScript} \\
-Various services for a product had poor reliability and poor visibility for determining when they were unavailable, or if they had been down in the recent past.
-\vspace*{-2mm}
-\begin{itemize}[leftmargin=4.5mm] \itemsep -1mm 
-	\item Wrote an internal tool that would record the recent uptime for the company\textquotesingle{}s services and display them in a webapp
-    \item Based on team needs, engineered a Webapp that displays history for 3 days for service availability for services running on dev, test, and production environments
-\end{itemize}
+\textit{\textbf{Performance Monitoring Tool}} \\ 
+    Because the database engine development team didn’t have insight into where performance bottlenecks were due to its distributed nature, they instrumented performance counters into their code, exposed them over \textbf{Protobuf}, and tasked me with writing a tool to extract their data. 
+    I wrote a Terminal User Interface using \textbf{C++} and \textbf{NCurses} to visualize this data in real time as well as exporting the collected data to \textbf{CSV}, allowing the database team to make informed changes to their code.
 \vspace*{2mm}
 \end{addmargin}
 
@@ -168,20 +149,6 @@ Various services for a product had poor reliability and poor visibility for dete
 
 
 
-\textbf{Assistant Maintainer} \textit{YewStack} \hfill April 2018 - Ongoing\\
-
-\begin{addmargin}[1em]{2em}% 1em left, 2em right
-{\textbf{Framework Contributor}} {\sl Rust, Yew, WASM, StdWeb, JavaScript} \\
-Yew, an Open Source Rust and WebAssembely based web framework modeled after Elm and React needed developers to add features and fix bugs.
-\vspace*{-2mm}
-\begin{itemize}[leftmargin=4.5mm] \itemsep -1mm
-	\item Contributed minor bugfixes regarding semantics of Yew's Actor model implementation
-	\item Added Services that bound to the browser's History Api and Resize events
-    \item Contributed example code for transforming markdown into Yew's VDom nodes and a primitive router example
-    \item Creator and Maintainer of the Yew's official router implementation
-\end{itemize}
-\vspace*{2mm}
-\end{addmargin}
 %\header{Programing Experience}
 %\begin{itemize}[leftmargin=*]\itemsep 1pt 
 %    \item[]{\makebox[3.2cm][l]{Proficient:} Rust, TypeScript}
